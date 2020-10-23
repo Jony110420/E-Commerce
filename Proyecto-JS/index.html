@@ -6,8 +6,27 @@
 
 	<!-- Estilos CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Slider -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!--  Moment-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+  <!-- Mis scripts -->
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+	<div id="selector-theme">
+			<div id="to-green"></div>
+			<div id="to-red"></div>
+			<div id="to-blue"></div>
+		</div>
+
 
 	<section id="global">
 		<!-- Cabecera -->
@@ -19,29 +38,26 @@
 
 			<nav id="menu">
 				<ul >
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Reloj</a></li>
-					<li><a href="#">Sobre Mi</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="reloj.html">Reloj</a></li>
+					<li><a href="about.html">Sobre Mi</a></li>
+					<li><a href="contact.html">Contacto</a></li>
 				</ul>
 			</nav>
 
 		</header>
 		<!-- Slider -->
 		<div id="slider">
-			
+			<div class="galeria">
+  <div><img src="img/3.jpg" title="Fortnite"></div>
+  <div><img src="img/4.jpg" title="GTA V"></div>
+  <div><img src="img/5.jpg" title="Fifa 20"></div>
+</div>
 		</div>
 		<!-- Contenido -->
 		<section id="content">
 			<div id="posts">
-				<article class="post">
-					<h2>Prueba de titulo</h2>
-					<span class="date">Fecha de publicacion</span>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-					</p>
-					<a href="#" class="button-more">Leer mas</a>
-				</article>
+				<!-- Se cargaran los parrafos desde un json -->
 				<article class="post">
 					<h2>Prueba de titulo</h2>
 					<span class="date">Fecha de publicacion</span>
@@ -56,13 +72,15 @@
 				<h4><span>¿Quien soy?</span></h4>
 				<img src="img/2.jpg">
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-			</div id="login">
+			</div>
+
+					<div id="login">
 				<h4><span>Identificate</span></h4>
 				<form>
 					<label for="name">
 						Nombre
 					</label>
-					<input type="text" name="name">
+					<input type="text" name="name" id="form_name">
 					<label for="name">
 						Email
 					</label>
@@ -83,7 +101,8 @@
 	</section>
 
 	<footer>
-		Master de JavaScript de Jonathan Alexis
+		Master de JavaScript de Jonathan Alexis  &copy;
+		<a href="#" class="subir">Ir arriba</a>
 	</footer>
 </body>
 </html>
