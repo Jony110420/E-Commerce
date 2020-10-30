@@ -10,8 +10,12 @@ export class ZapatillasComponent {
 	public titulo: string = "Componente de zapatillas";
 	public zapatillas: Array<Zapatilla>;
 	public marcas: String[];
+	public color: string;
+	public mi_marca: string;
+
 
 	constructor(){
+		this.color = 'blue';
 		this.marcas = new Array();
 		this.zapatillas = [
 		new Zapatilla('Nike Air', 'Nike', 'Rojas',190, true),
@@ -42,6 +46,23 @@ getMarcas(){
 		console.log(this.marcas);
 	}
 
+
+getMarca(){
+		alert(this.mi_marca);
+	}
+	addMarca(){
+		this.marcas.push(this.mi_marca);
+	}
+	borrarMarca(index){
+		 //delete this.marcas[index];
+		this.marcas.splice(index, 1);
+	}
+onBlur(){
+		console.log("Has salido del input");
+	}
+	mostrarPalabra(){
+		alert(this.mi_marca);
+	}
 	}
 
 	
